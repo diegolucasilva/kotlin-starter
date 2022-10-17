@@ -39,7 +39,7 @@ fun main(args: Array<String>) {
 
 
 fun <T> append(item1: T, item2: T)
-    where T: CharSequence, T: Appendable {
+    where T: CharSequence, T: Appendable {  //Muito bom!!!!!
     println("Result is ${item1.append(item2)}")
 }
 

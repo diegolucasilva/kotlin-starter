@@ -9,6 +9,7 @@ fun main(args: Array<String>) {
             return "This is from mustImplement: ${num * 100}"
         }
     })
+
     println(thisIsMutable)
 }
 

@@ -1,6 +1,6 @@
 package type_aliases.learnprogramming.functions.accessmodifier
 
-val MY_CONSTANT = 100 //tem que val(n pode ser alterado, var = pode ser alterado
+const val MY_CONSTANT = 100 //tem que val(n pode ser alterado, var = pode ser alterado
 
 fun main(args: Array<String>) {
     println(MY_CONSTANT)

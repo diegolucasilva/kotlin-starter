@@ -29,7 +29,7 @@ fun <T: Any> List<T>.printCollection3() { //com o Any ele deixa de aceitar nulla
         println(item)
     }
 }
-fun <T> printCollectionVerbose(collection :List <T>) {
+fun <T> printCollectionVerbose(collection :List <T>) { //the first <T> is the type parameter declaration
     for (item in collection) {
         println(item)
     }

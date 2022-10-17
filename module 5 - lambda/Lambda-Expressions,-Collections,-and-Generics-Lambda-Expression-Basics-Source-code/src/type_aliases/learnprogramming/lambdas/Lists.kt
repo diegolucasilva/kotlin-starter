@@ -30,7 +30,7 @@ fun main(args: Array<String>) {
     println(noDupColors)
 
     val ints = listOf(1, 2, 3, 4, 5)
-    println(ints.max())
+  //  println(ints.max())
     /*val ints = arrayOf(1, 2, 3, 4, 5)
     val add10List: MutableList<Int> = mutableListOf()
     for (i in ints) {

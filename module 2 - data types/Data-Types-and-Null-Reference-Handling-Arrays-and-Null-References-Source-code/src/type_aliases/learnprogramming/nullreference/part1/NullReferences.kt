@@ -1,10 +1,12 @@
 package type_aliases.learnprogramming.nullreference.part1
 
+import java.util.*
+
 fun main(args: Array<String>) {
 
     val str: String? = null  // oo ? diz que o valor pode ser null
     //str.toUpperCase() n compila, pq ele sabe que pode dar um nullpointer já que o valor acima foi declardo com ? e pode ser null
-    str?.toUpperCase() // so    vai ser executado se não estiver null;
+    str?.uppercase(Locale.getDefault()) // so    vai ser executado se não estiver null;
 
     //val str44 = str!!; //ele ja ve se é null aqui por quase do !! e já lança exception
     //val str4 = str!!.toUpperCase() //dessa forma, assume que pode tomar nullpointer(e vai dar no caso)

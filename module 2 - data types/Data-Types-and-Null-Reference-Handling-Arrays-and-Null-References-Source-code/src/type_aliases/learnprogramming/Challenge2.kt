@@ -1,11 +1,13 @@
 package type_aliases.learnprogramming
 
+import java.util.*
+
 fun main(args: Array<String>) {
 
     // 1. Declare a non-nullable float variable two ways,
     // and assign it the value -3847.384
     val float0: Float = -3847.384f
-    val float1: Float = -3847.384.toFloat()
+    val float1: Float = (-3847.384).toFloat()
 
     // 2. Now change both of those variable declarations into nullable variables.
     val float2: Float? = -3847.384f
@@ -33,7 +35,7 @@ fun main(args: Array<String>) {
     // Using one line of code, declare another string variable,
     // and assign it x.toLowerCase() when x isn't null,
     // and the string "I give up!" when x is null.
-    val z = x?.toLowerCase() ?: "I give up!" // ? assume que realmente quer usar uma val que pode ser null
+    val z = x?.lowercase(Locale.getDefault()) ?: "I give up!" // ? assume que realmente quer usar uma val que pode ser null
     println(z)
 
     // 7. Now use the let function to (a) lowercase the string, and then

@@ -1,7 +1,11 @@
 package type_aliases.learnprogramming.lambdas.generics.contracovarience
 
 
+/*
 
+https://medium.com/@yuhuan/covariance-and-contravariance-in-java-6d9bfb7f6b8e
+
+ */
 fun main(args: Array<String>) {
     //object = anonymous class
     val flowerTender = object: FlowerCare<Flower> {

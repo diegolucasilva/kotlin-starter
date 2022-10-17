@@ -19,7 +19,7 @@ fun getNumber(str: String): Int? { //'?' assumiu que o valor pode ser null
             Integer.parseInt(str)
         }
         catch(e: NumberFormatException) {
-            //0
+            //4444 //retorna isso aqui
             null //para poder retornar null tem que colocar o ?
         }
         finally {

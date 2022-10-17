@@ -6,7 +6,7 @@ fun main(args: Array<String>) {
     println("default datatype is ${myInt is Int}")
     var myLong = 22L
 
-    myLong = myInt.toLong()
+    myLong = myInt.toLong() //we need to convert manual!!!
 
     val myByte: Byte = 111
     var myShort: Short

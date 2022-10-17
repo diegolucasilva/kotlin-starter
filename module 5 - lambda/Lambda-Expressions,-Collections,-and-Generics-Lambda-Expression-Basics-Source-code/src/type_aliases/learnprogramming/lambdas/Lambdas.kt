@@ -10,7 +10,7 @@ fun main(args: Array<String>) {
 
     //println(employees.minBy {o -> o.startYear})
     //println(employees.minBy(Employee::startYear))
-    println(employees.minBy{it.startYear})
+  //  println(employees.minBy{it.startYear})
 
 //    var num = 10
 //    run {

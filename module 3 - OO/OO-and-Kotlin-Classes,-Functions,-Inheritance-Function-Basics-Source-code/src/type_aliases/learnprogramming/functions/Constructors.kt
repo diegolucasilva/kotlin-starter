@@ -15,6 +15,13 @@ fun main(args: Array<String>) {
     println(emp3.firstName)
     println(emp3.fullTime)
 
+
+
+    val emp4 = Employee("Jane", false, false)
+    println(emp4.firstName)
+    println(emp4.fullTime)
+    println(emp.another)
+
     println(Demo().dummy)
 
 }

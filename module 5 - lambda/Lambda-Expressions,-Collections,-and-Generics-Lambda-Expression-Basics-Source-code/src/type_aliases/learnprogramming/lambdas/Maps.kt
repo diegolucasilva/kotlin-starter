@@ -7,13 +7,13 @@ fun main(args: Array<String>) {
             2 to Car("red", "Ford", 2016),
             3 to Car("silver", "Honda", 2013))
 
-    println(immutableMap.javaClass)
-    println(immutableMap)
+  //  println(immutableMap.javaClass)
+  //  println(immutableMap)
 
     val mutableMap = hashMapOf<String, Car>("John's car" to Car("red", "Range Rover", 2010),
             "Jane's car" to Car("blue", "Hyundai", 2012))
-    println(mutableMap.javaClass)
-    println(mutableMap)
+ //   println(mutableMap.javaClass)
+ //   println(mutableMap)
     //mutableMap.put("Mary's car", Car("red", "Corvette", 1965))
     mutableMap["Mary's car"] = Car("red", "Corvette", 1965)
     /*for (entry in mutableMap) {
@@ -21,8 +21,8 @@ fun main(args: Array<String>) {
         println(entry.value)
     }*/ //verbose mode
     for ((k, v) in mutableMap) {
-        println(k)
-        println(v)
+   //     println(k)
+    //    println(v)
     }
 
     ///////////////
@@ -30,6 +30,8 @@ fun main(args: Array<String>) {
     println(immutableMap.any { it.value.year > 2014 })
     println(immutableMap.count { it.value.year > 2014 })
     val cars = immutableMap.values
+
+    println("////")
     println(cars.find { it.year > 2014 })
     println(cars.groupBy { it.color })
     println(cars.sortedBy { it.year })

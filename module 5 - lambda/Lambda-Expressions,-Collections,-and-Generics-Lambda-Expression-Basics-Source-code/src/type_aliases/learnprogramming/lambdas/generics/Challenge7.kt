@@ -55,7 +55,7 @@ fun main(args: Array<String>) {
 
     var regularPaper = Box<Regular>()
     var paper = Box<Paper>()
-   // paper = regularPaper // Bo deve ser coverient(readonly)
+   // paper = regularPaper // Box deve ser coverient(readonly). Aceppt T or N subtype of T
 
     paper.addPaper(Premium()) //so compila com in
 

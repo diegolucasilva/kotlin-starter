@@ -7,15 +7,15 @@ fun main(args: Array<String>)  {
     val employeeOne = Employee("Mary", 1)
     val employeeTwo = Employee("John", 2)
     val employeeThree = Employee("John", 2)
-    println(employeeOne === employeeTwo)
-    println(employeeTwo === employeeThree)
-    println(employeeOne == employeeTwo)
-    println(employeeTwo == employeeThree)
+    println(employeeOne === employeeTwo) //false
+    println(employeeTwo === employeeThree) //false
+    println(employeeOne == employeeTwo) //true
+    println(employeeTwo == employeeThree) //true
     val employeeFour = employeeTwo
-    println(employeeFour === employeeTwo)
+    println(employeeFour === employeeTwo) //true
 
-    println(employeeFour != employeeTwo)
-    println(employeeFour !== employeeTwo)
+    println(employeeFour != employeeTwo) //false
+    println(employeeFour !== employeeTwo)  //false
     println(employeeTwo != employeeThree)
     println(employeeTwo !== employeeThree)
 
@@ -26,7 +26,7 @@ fun main(args: Array<String>)  {
     var something: Any = employeeFour
     if (something is Employee) {
         //val newEmployee = something as Employee
-        something = employeeOne
+        something = employeeOne  //smart casting
         println(something.name)
     }
 

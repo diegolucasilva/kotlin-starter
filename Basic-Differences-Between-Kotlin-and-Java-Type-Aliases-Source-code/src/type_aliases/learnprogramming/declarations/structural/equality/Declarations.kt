@@ -10,17 +10,17 @@ fun main(args: Array<String>)  {
     val employeeOne = Employee("Mary", 1)
     val employeeTwo = Employee("John", 2)
     val employeeThree = Employee("John", 2)
-    println(employeeOne === employeeTwo)
-    println(employeeTwo === employeeThree)
-    println(employeeOne == employeeTwo)
-    println(employeeTwo == employeeThree)
+    println(employeeOne === employeeTwo) //false
+    println(employeeTwo === employeeThree) //false
+    println(employeeOne == employeeTwo) //false
+    println(employeeTwo == employeeThree) //true
     val employeeFour = employeeTwo
     println(employeeFour === employeeTwo)
 
-    println(employeeFour != employeeTwo)
-    println(employeeFour !== employeeTwo)
-    println(employeeTwo != employeeThree)
-    println(employeeTwo !== employeeThree)
+    println(employeeFour != employeeTwo) //false
+    println(employeeFour !== employeeTwo) //false
+    println(employeeTwo != employeeThree) //false
+    println(employeeTwo !== employeeThree) //true
 
     var number: Int
     number = 10;
